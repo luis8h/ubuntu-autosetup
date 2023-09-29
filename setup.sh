@@ -23,7 +23,5 @@ sudo tee /etc/apt/sources.list.d/regolith.list
 sudo apt update -y
 sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille -y
 
-# installing regolith extensions
-sudo apt install i3xrocks-battery -y
-sudo apt install i3xrocks-volume -y
-regolith-look refresh
+# install rose pine for gnome terminal
+dconf load /org/gnome/terminal/legacy/profiles:/ < rose-pine-terminal/dist/rose-pine.dconf
