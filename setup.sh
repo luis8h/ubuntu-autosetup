@@ -30,3 +30,6 @@ dconf load /org/gnome/terminal/legacy/profiles:/ < rose-pine-terminal/dist/rose-
 ./terminal-profile/install_powerline.sh
 ./terminal-profile/install_terminal.sh
 ./terminal-profile/install_profile.sh
+ 
+# install nvim
+sudo snap install nvim --classic
