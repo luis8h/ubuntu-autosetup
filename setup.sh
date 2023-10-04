@@ -25,3 +25,8 @@ sudo apt install regolith-desktop regolith-session-flashback regolith-look-lasca
 
 # install rose pine for gnome terminal
 dconf load /org/gnome/terminal/legacy/profiles:/ < rose-pine-terminal/dist/rose-pine.dconf
+
+# gnome terminal customization (from yt video)
+./terminal-profile/install_powerline.sh
+./terminal-profile/install_terminal.sh
+./terminal-profile/install_profile.sh
