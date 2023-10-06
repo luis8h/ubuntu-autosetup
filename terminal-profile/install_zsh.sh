@@ -543,7 +543,7 @@ EOF
     exit
   fi
 
-  exec zsh -l
+  #exec zsh -l
 }
 
 main "$@"

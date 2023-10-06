@@ -1,8 +1,6 @@
 # Fail on any command.
 set -eux pipefail
 
-touch script_runned
-
 # Install Powerline for VIM.
 sudo apt install -y python3-pip
 pip3 install --user powerline-status
