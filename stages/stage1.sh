@@ -2,12 +2,15 @@
 
 echo "this is stage 1"
 
+
 PROGRESS_FILE="$(dirname "$0")/../.progress"
+MAIN_DIR="$(dirname "$0")/.."
 
-(crontab -l ; echo "@reboot /bin/sh /home/luis8h/ubuntu-autosetup/setup.sh") | crontab -
+$MAIN_DIR/terminal-profile/install_powerline.sh
 
-if echo "2" > "$PROGRESS_FILE"; then
+if echo "1" > "$PROGRESS_FILE"; then
     echo "Progress file updated successfully."
 else
     echo "Failed to update progress file."
 fi
+

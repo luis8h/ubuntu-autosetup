@@ -1,29 +1,21 @@
-#!/bin/bash
+#!/bin/sh
 
 echo "setting up ubuntu ..."
 
-# creating progress file
-if [ -e "stages/.progress" ]; then
+PROGRESS_FILE="$(dirname "$0")/.progress"
+
+# Creating progress file
+if [ -e "$PROGRESS_FILE" ]; then
     # Read the number from the file and set it to 0 if uninitialized or empty
-    progress=$(<stages/.progress)
+    progress=$(cat "$PROGRESS_FILE")
     progress=${progress:-0}
     echo "current progress: $progress"
 else
     echo "creating progress file ..."
     progress=${progress:-0}
-    echo 0 > stages/.progress
+    echo 0 > "$PROGRESS_FILE"
 fi
 
-./stages/stage$progress-test.sh
-
-number=$(<stages/.progress)
-echo "number aFter stage 0 $number"
-
-
-# gnome terminal customization (from yt video)
-#./terminal-profile/install_powerline.sh
-#./terminal-profile/install_terminal.sh
-#./terminal-profile/install_profile.sh
- 
-# install nvim
-#sudo snap install nvim --classic
+# Execute the stage script using the absolute path
+STAGE_SCRIPT="$(dirname "$0")/stages/stage$progress-test.sh"
+sh "$STAGE_SCRIPT"

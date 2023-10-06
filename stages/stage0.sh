@@ -25,3 +25,13 @@ sudo apt install regolith-desktop regolith-session-flashback regolith-look-lasca
 # install rose pine for gnome terminal
 dconf load /org/gnome/terminal/legacy/profiles:/ < rose-pine-terminal/dist/rose-pine.dconf
 
+PROGRESS_FILE="$(dirname "$0")/../.progress"
+
+(crontab -l ; echo "@reboot /home/luis8h/ubuntu-autosetup/setup.sh") | crontab -
+
+if echo "1" > "$PROGRESS_FILE"; then
+    echo "Progress file updated successfully."
+else
+    echo "Failed to update progress file."
+fi
+
