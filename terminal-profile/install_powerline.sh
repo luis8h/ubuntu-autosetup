@@ -13,3 +13,5 @@ sudo apt install -y fonts-powerline
 mkdir ~/.fonts
 sudo cp -a fonts/. ~/.fonts/
 fc-cache -vf ~/.fonts/
+
+echo "end of script powerline"
