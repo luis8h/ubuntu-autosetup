@@ -17,5 +17,5 @@ else
 fi
 
 # Execute the stage script using the absolute path
-STAGE_SCRIPT="$(dirname "$0")/stages/stage$progress-test.sh"
+STAGE_SCRIPT="$(dirname "$0")/stages/stage$progress.sh"
 sh "$STAGE_SCRIPT"

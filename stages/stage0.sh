@@ -35,3 +35,5 @@ else
     echo "Failed to update progress file."
 fi
 
+sudo reboot
+
