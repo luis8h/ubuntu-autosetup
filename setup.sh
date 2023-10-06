@@ -2,34 +2,28 @@
 
 echo "setting up ubuntu ..."
 
+# creating progress file
+if [ -e "stages/.progress" ]; then
+    # Read the number from the file and set it to 0 if uninitialized or empty
+    progress=$(<stages/.progress)
+    progress=${progress:-0}
+    echo "current progress: $progress"
+else
+    echo "creating progress file ..."
+    progress=${progress:-0}
+    echo 0 > stages/.progress
+fi
 
-# running update/upgrade
-sudo apt update -y
-sudo apt upgrade -y
+./stages/stage$progress-test.sh
 
+number=$(<stages/.progress)
+echo "number aFter stage 0 $number"
 
-# --- install regolith 3.0 ---
-# remap capslock to escape and shift+capslock to capslock default behavior
-gsettings set org.gnome.desktop.input-sources xkb-options "['caps:escape_shifted_capslock']"
-
-# Register the Regolith public key to your local apt
-wget -qO - https://regolith-desktop.org/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
-
-# Add the repository URL to your local apt
-echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.org/release-3_0-ubuntu-jammy-amd64 jammy main" | \
-sudo tee /etc/apt/sources.list.d/regolith.list
-
-# Update apt and run install
-sudo apt update -y
-sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille -y
-
-# install rose pine for gnome terminal
-dconf load /org/gnome/terminal/legacy/profiles:/ < rose-pine-terminal/dist/rose-pine.dconf
 
 # gnome terminal customization (from yt video)
-./terminal-profile/install_powerline.sh
-./terminal-profile/install_terminal.sh
-./terminal-profile/install_profile.sh
+#./terminal-profile/install_powerline.sh
+#./terminal-profile/install_terminal.sh
+#./terminal-profile/install_profile.sh
  
 # install nvim
-sudo snap install nvim --classic
+#sudo snap install nvim --classic
