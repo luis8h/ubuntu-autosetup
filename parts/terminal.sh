@@ -6,4 +6,4 @@ dconf load /org/gnome/terminal/legacy/profiles:/ < $DIR/../lib/rose-pine-termina
 
 ./$DIR/../lib/terminal-profile/install_powerline.sh
 ./$DIR/../lib/terminal-profile/install_terminal.sh
-./$DIR/../lib/terminal-profile/install_profile.sh
+#./$DIR/../lib/terminal-profile/install_profile.sh
