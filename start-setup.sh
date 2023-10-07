@@ -5,8 +5,8 @@ echo "setting up ubuntu ..."
 DIR="$(dirname "$0")"
 
 
-sh $DIR/parts/regolith.sh
-sh $DIR/parts/general.sh
-sh $DIR/parts/terminal.sh
+#sh $DIR/parts/regolith.sh
+./$DIR/parts/general.sh
+#./$DIR/parts/terminal.sh
 
 

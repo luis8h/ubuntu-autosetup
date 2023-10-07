@@ -9,7 +9,8 @@ set -eux pipefail
 # Install ZSH
 sudo apt install -y git-core zsh curl
 
-sh install_zsh.sh
+DIR="$(dirname "$0")"
+./$DIR/install_zsh.sh
 
 # Set ZSH as the default shell for the current user
 
