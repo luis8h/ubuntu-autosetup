@@ -4,10 +4,11 @@ DIR="$(dirname "$0")"
 
 snap install nvim --classic
 
-#installing packer 
+#installing packer
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 cp -r $DIR/../lib/nvim ~/.config/
 
-nvim -es -u ${HOME}/.config/nvim/lua/theprimeagen/packer.lua -c "so" -c "PackerSync" -c "qa"
+nvim --headless -c 'so ~/.config/nvim/lua/theprimeagen/packer.lua' -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+#nvim -es -u ${HOME}/.config/nvim/lua/theprimeagen/packer.lua -c "so" -c "PackerSync" -c "qa"
