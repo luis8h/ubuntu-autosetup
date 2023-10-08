@@ -10,4 +10,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 cp -r $DIR/../lib/nvim ~/.config/
 
-nvim -es -u ${HOME}/.config/nvim/lua/theprimeagen/packer.lua -c "so" -c "qa"
+nvim -es -u ${HOME}/.config/nvim/lua/theprimeagen/packer.lua -c "so" -c "PackerSync" -c "qa"
