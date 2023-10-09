@@ -14,7 +14,7 @@ sudo cp $DIR/configs/.zshrc ~/.zshrc
 sudo cp $DIR/configs/pixegami-agnoster.zsh-theme ~/.oh-my-zsh/themes/pixegami-agnoster.zsh-theme
 
 # Color Theme
-#dconf load /org/gnome/terminal/legacy/profiles:/:fb358fc9-49ea-4252-ad34-1d25c649e633/ < $DIR/configs/terminal_profile.dconf
+dconf load /org/gnome/terminal/legacy/profiles:/:fb358fc9-49ea-4252-ad34-1d25c649e633/ < $DIR/configs/terminal_profile.dconf
 
 # Add it to the default list in the terminal
 add_list_id=fb358fc9-49ea-4252-ad34-1d25c649e633
@@ -28,8 +28,10 @@ else
 fi
 
 new_list="$front_list'$add_list_id']"
-#dconf write /org/gnome/terminal/legacy/profiles:/list "$new_list"
-#dconf write /org/gnome/terminal/legacy/profiles:/default "'$add_list_id'"
+dconf write /org/gnome/terminal/legacy/profiles:/list "$new_list"
+dconf write /org/gnome/terminal/legacy/profiles:/default "'$add_list_id'"
+
+dconf reset -f /org/gnome/terminal/legacy/profiles:/:fb358fc9-49ea-4252-ad34-1d25c649e633/
 
 # Switch the shell.
 chsh -s $(which zsh)
