@@ -31,7 +31,7 @@ new_list="$front_list'$add_list_id']"
 dconf write /org/gnome/terminal/legacy/profiles:/list "$new_list"
 dconf write /org/gnome/terminal/legacy/profiles:/default "'$add_list_id'"
 
-dconf reset -f /org/gnome/terminal/legacy/profiles:/:fb358fc9-49ea-4252-ad34-1d25c649e633/
+#dconf reset -f /org/gnome/terminal/legacy/profiles:/:fb358fc9-49ea-4252-ad34-1d25c649e633/
 
 # Switch the shell.
 chsh -s $(which zsh)
