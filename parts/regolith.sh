@@ -11,5 +11,16 @@ sudo tee /etc/apt/sources.list.d/regolith.list
 sudo apt update -y
 sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille -y
 
+# additional indicators
 sudo apt install i3xrocks-battery -y
 sudo apt install i3xrocks-volume -y
+
+# setting config
+mkdir ~/.config/regolith3/i3
+cp /etc/regolith3/i3/config ~/.config/regolith3/i3/config
+echo 'bindsym $mod+Shift+o' >> ~/.config/regolith3/i3/config
+
+
+
+
+
