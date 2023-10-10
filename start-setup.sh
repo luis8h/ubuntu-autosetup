@@ -11,4 +11,5 @@ DIR="$(dirname "$0")"
 ./$DIR/parts/tmux.sh
 ./$DIR/parts/regolith.sh
 
+sudo reboot
 
