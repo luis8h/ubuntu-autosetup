@@ -16,6 +16,9 @@ sudo apt install i3xrocks-battery -y
 sudo apt install i3xrocks-volume -y
 
 # setting config
+mkdir ~/.config/regolith3/i3
+cp /etc/regolith/i3/config ~/.config/regolith3/i3/config
+echo 'bindsym $mod+Shift+o' >> ~/.config/regolith3/i3/config
 
 
 
