@@ -9,6 +9,6 @@ DIR="$(dirname "$0")"
 ./$DIR/parts/terminal.sh
 ./$DIR/parts/nvim.sh
 ./$DIR/parts/tmux.sh
-./$DIR/parts/regolith.sh
+#./$DIR/parts/regolith.sh
 
 
