@@ -21,6 +21,10 @@ mkdir ~/.config/regolith3/i3
 cp /etc/regolith/i3/config ~/.config/regolith3/i3/config
 echo 'bindsym $mod+Shift+o move workspace to output right' >> ~/.config/regolith3/i3/config
 
+# remove regolith terminal profile
+dconf reset -f /org/gnome/terminal/legacy/profiles:/:addd57db-1c5f-4368-a804-f7923c8b4058/
+
+
 
 
 
