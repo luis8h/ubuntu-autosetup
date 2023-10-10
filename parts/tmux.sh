@@ -9,9 +9,12 @@ sudo apt install tmux -y
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 #set tmux config file
-mkdir ~/.config/tmux
-cp $DIR/../lib/tmux/tmux.conf ~/.config/tmux/tmux.conf
-tmux source ~/.config/tmux/tmux.conf
+#mkdir ~/.config/tmux
+rm -r ~/.config/tmux
+cp -r $DIR/../lib/tmux ~/.config/tmux
+#tmux source ~/.config/tmux/tmux.conf
+
+tmux source-file ~/.config/tmux/tmux.conf
 
 #running install plugins
 ~/.tmux/plugins/tpm/bin/install_plugins
