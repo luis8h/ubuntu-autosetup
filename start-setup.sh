@@ -10,6 +10,7 @@ DIR="$(dirname "$0")"
 ./$DIR/parts/nvim.sh
 ./$DIR/parts/tmux.sh
 ./$DIR/parts/regolith.sh
+./$DIR/parts/docker.sh
 
 sudo reboot
 
