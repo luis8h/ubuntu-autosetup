@@ -8,6 +8,7 @@ i3, tmux and nvim.
 #### vm
 - install enhanced keyboard when using vm ware player
 (win+l will lock host machine)
+- switch to light mode when using vm ware player to use multiple monitors
 
 #### laptop
 - configure trackpad behavior and power button behavior
