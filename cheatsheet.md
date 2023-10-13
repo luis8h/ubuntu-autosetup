@@ -14,7 +14,14 @@ i3, tmux and nvim.
 - configure trackpad behavior and power button behavior
 
 ## i3
-- ```win + shift + o``` cycle workspace between monitors
+- ```leader``` win
+- ```leader + shift + o``` cycle workspace between monitors
+- ```leader + 1``` open workspace 1
+- ```leader + shift + 1``` move window to workspace 1
+- ```leader + h/j/k/l``` navigate through windows
+- ```leader + shift + h/j/k/l``` move windows around
+- ```leader + r``` enter resize mode (use h/j/k/l to resize)
+- ```leader + ?``` show shortcuts
 
 ## tmux
 ##### shortcuts
@@ -54,4 +61,22 @@ installation or config changes
 ##### [more ...](https://tmuxcheatsheet.com/)
 
 ## vim
+##### shortcuts (not the basic vim movements)
+- ```<leader>``` space
+- netrw file browser
+    - ```%``` create file
+    - ```d``` create directory
+- vim editor
+    - ```<leader>pv``` open file browser
+    - ```=``` auto align selected code
+    - ```<leader>pf``` find files (all)
+    - ```<C-p>``` find files (git)
+    - ```<leader>ps``` find files by text in file
+
+##### commands
+- ```:h rtp``` display config paths
+- ```:so``` source file
+- ```:PackerSync``` install packer plugins (after :so)
+
+
 
