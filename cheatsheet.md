@@ -62,21 +62,47 @@ installation or config changes
 
 ## vim
 ##### shortcuts (not the basic vim movements)
-- ```<leader>``` space
+- general
+    - ```<leader>``` space
+    - ```<leader>u``` toggle undo tree
+    - ```<leader>gs``` open git
 - netrw file browser
     - ```%``` create file
     - ```d``` create directory
-- vim editor
+    - ```D``` delete file/directory
     - ```<leader>pv``` open file browser
-    - ```=``` auto align selected code
+- fuzzy finder
     - ```<leader>pf``` find files (all)
     - ```<C-p>``` find files (git)
     - ```<leader>ps``` find files by text in file
+- harpoon
+    - ```<leader>a``` add current file to harpoon
+    - ```<C-e>``` toggle harpoon menu
+    - ```<C-(h|t|n|s)>``` navigate to harpoon file 1, 2, 3, 4
+- lsp
+    - ```<C-(p|n)>``` navigate through completion list
+    - ```<C-y>``` accepts completion
+    - ```<C-Space>``` start/open completion
+    - ```<leader>gd``` go to definition
+- editing
+    - ```=``` auto align selected code
+    - ```(J|K)``` move selected text up and down
+    - ```J``` append line underneath to current line
+    - ```<C-(d|u)>``` move page up and down
+    - ```zz``` center current line
+    - ```<leader>p``` replace text with text in buffer (keeps buffered text)
+    - ```<leader>y``` yank to system clipboard
+    - ```<leader>d``` deleting to void register
+    - ```<C-f>``` search for project (tmux sessions)
+    - ```<leader>-s``` replace current word
+    - ```<leader>-x``` make file executable without quitting vim
+
 
 ##### commands
 - ```:h rtp``` display config paths
 - ```:so``` source file
 - ```:PackerSync``` install packer plugins (after :so)
+- ```:Mason``` opens Mason to install language server etc.
 
 
 
