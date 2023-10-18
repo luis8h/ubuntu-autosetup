@@ -84,6 +84,10 @@ installation or config changes
     - ```<C-y>``` accepts completion
     - ```<C-Space>``` start/open completion
     - ```<leader>gd``` go to definition
+    - ```<leader>vca``` show code actions
+    - ```<leader>vd``` open floating text to see full error message
+    - ```<leader>vrr``` show all references
+    - ```<leader>vrn``` rename variable/method/...
 - editing
     - ```=``` auto align selected code
     - ```(J|K)``` move selected text up and down
