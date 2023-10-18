@@ -45,7 +45,7 @@ i3, tmux and nvim.
 - terminal selection plugin:
     - ```prefix + [``` enter selection mode in terminal
     - ```v``` go into visual mode
-    - ```y``` yank selection
+    - ```prefix + y``` yank selection
     - ```ctrl + v``` toggle line and rectangle select
 
 ##### commands
