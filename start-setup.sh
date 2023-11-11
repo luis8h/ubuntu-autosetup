@@ -6,6 +6,7 @@ DIR="$(dirname "$0")"
 
 
 ./$DIR/parts/general.sh
+./$DIR/parts/gcm.sh
 ./$DIR/parts/terminal.sh
 ./$DIR/parts/imwheel.sh
 ./$DIR/parts/nvim.sh
