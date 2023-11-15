@@ -71,6 +71,7 @@ installation or config changes
     - ```d``` create directory
     - ```D``` delete file/directory
     - ```<leader>pv``` open file browser
+    - ```<C-r>``` refresh directories
 - fuzzy finder
     - ```<leader>pf``` find files (all)
     - ```<C-p>``` find files (git)
@@ -78,7 +79,7 @@ installation or config changes
 - harpoon
     - ```<leader>a``` add current file to harpoon
     - ```<C-e>``` toggle harpoon menu
-    - ```<C-(h|t|n|s)>``` navigate to harpoon file 1, 2, 3, 4
+    - ```<C-(m|t|n|s)>``` navigate to harpoon file 1, 2, 3, 4 (h replaced with m)
 - lsp
     - ```<C-(p|n)>``` navigate through completion list
     - ```<C-y>``` accepts completion
@@ -107,6 +108,7 @@ installation or config changes
 - ```:so``` source file
 - ```:PackerSync``` install packer plugins (after :so)
 - ```:Mason``` opens Mason to install language server etc.
+- ```:verbose map <C-h>``` show keymap of C-h
 
 
 

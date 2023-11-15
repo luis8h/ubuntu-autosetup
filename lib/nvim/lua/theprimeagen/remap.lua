@@ -1,13 +1,7 @@
--- dreamsofcode vim tmux navigator settings
-local M = {}
-M.general = {
-    n = {
-        ["<C-h>"] = {"<cmd> TmuxNavigateLeft<CR>", "window left" },
-        ["<C-l>"] = {"<cmd> TmuxNavigateRight<CR>", "window right" },
-        ["<C-j>"] = {"<cmd> TmuxNavigateDown<CR>", "window down" },
-        ["<C-k>"] = {"<cmd> TmuxNavigateUp<CR>", "window up" },
-    }
-}
+
+-- remap netrw refresh
+vim.keymap.set('n', '<unique><C-r>', '<Plug>NetrwRefresh')
+
 
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
@@ -44,8 +38,9 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+-- commentet out for tmux vim navigator
+-- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+-- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
