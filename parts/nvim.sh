@@ -2,6 +2,9 @@
 
 DIR="$(dirname "$0")"
 
+# install psql for nvim dadbod (sql in nvim)
+sudo apt-get install -y postgresql-client
+
 snap install nvim --classic
 
 #installing packer

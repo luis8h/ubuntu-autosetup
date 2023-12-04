@@ -84,5 +84,13 @@ return require('packer').startup(function(use)
   -- not from prime
   use("christoomey/vim-tmux-navigator")
 
+  -- markdown preview
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+  -- sql
+  use("tpope/vim-dadbod")
+  use("kristijanhusak/vim-dadbod-ui")
+  use("kristijanhusak/vim-dadbod-completion")
+
 end)
 
