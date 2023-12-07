@@ -12,3 +12,4 @@ sudo ./FreeFileSync_13.2_Install.run
 # remove created files
 rm *deb
 rm *gz
+rm FreeFileSync_13.2_Install.run
