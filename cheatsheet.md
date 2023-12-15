@@ -42,6 +42,8 @@ i3, tmux and nvim.
 - ```prefix + s``` list sessions
 - ```prefix + w``` show sessions with windows (attach with enter)
 - ```prefix + I``` install plugins when in tmux.conf
+- ```prefix + ctrl-s``` save session
+- ```prefix + ctrl-r``` restore session
 - terminal selection plugin:
     - ```prefix + [``` enter selection mode in terminal
     - ```v``` go into visual mode
