@@ -12,7 +12,11 @@ sudo ./FreeFileSync_13.2_Install.run
 # postman
 sudo snap install postman
 
+# discord
+sudo snap install discord
+
 # remove created files
 rm *deb
 rm *gz
 rm FreeFileSync_13.2_Install.run
+

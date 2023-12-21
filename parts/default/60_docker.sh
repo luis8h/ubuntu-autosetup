@@ -23,5 +23,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 # make useable without root
 sudo groupadd docker
 sudo usermod -aG docker $USER
-newgrp docker
+
+# commented out to pottentially fix issue
+# newgrp docker
 
