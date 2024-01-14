@@ -20,6 +20,10 @@ echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/liquibase-keyring.gpg] https
 sudo apt-get update
 sudo apt-get install liquibase
 
+# install java
+sudo apt install default-jdk
+sudo apt install default-jre
+
 # remove created files
 rm *deb
 rm *gz
