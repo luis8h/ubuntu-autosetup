@@ -74,6 +74,7 @@ installation or config changes
     - ```D``` delete file/directory
     - ```<leader>pv``` open file browser
     - ```<C-r>``` refresh directories
+    - ```i``` change fire tree representation
 - fuzzy finder
     - ```<leader>pf``` find files (all)
     - ```<C-p>``` find files (git)
