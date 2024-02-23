@@ -3,7 +3,8 @@
 DIR="$(dirname "$0")"
 
 # install
-sudo apt install zsh
+sudo apt install -y git-core zsh curl
+./$DIR../lib/terminal-profile/install_zsh.sh
 
 # plugins
 (cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/zsh-users/zsh-syntax-highlighting)
