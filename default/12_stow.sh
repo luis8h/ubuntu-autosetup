@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install stow build-essential
+sudo apt install stow build-essential -y
