@@ -1,5 +1,7 @@
 # Cheatsheet
 
+**important: run install script as user and not as root. Otherwise the environment variables are not set correct.**
+
 This file contains important shortcuts and commands for using this ubuntu
 configuration. It includes default keybindings, but also some custom remaps for
 i3, tmux and nvim.

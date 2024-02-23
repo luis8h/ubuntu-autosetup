@@ -6,12 +6,12 @@ DIR="$(dirname "$0")"
 sudo apt install -y git-core zsh curl
 ./$DIR/../lib/terminal-profile/install_zsh.sh
 
-# plugins
-(cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/zsh-users/zsh-syntax-highlighting)
-(cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/zsh-users/zsh-autosuggestions)
-git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode
+echo "didijaljsdljf;asd;lfj;asjdl;fjl;ajsljflkjlskjdlkfjlsjfl: $DIR"
 
-cd $DIR
+# plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://github.com/jeffreytse/zsh-vi-mode ~/.oh-my-zsh/custom/plugins/zsh-vi-mode
 
 # Color Theme
 dconf load /org/gnome/terminal/legacy/profiles:/:fb358fc9-49ea-4252-ad34-1d25c649e633/ < $DIR/../lib/terminal-profile/configs/terminal_profile.dconf
@@ -20,9 +20,9 @@ old_list=$(dconf read /org/gnome/terminal/legacy/profiles:/list | tr -d "]")
 
 if [ -z "$old_list" ]
 then
-	front_list="["
+        front_list="["
 else
-	front_list="$old_list, "
+        front_list="$old_list, "
 fi
 
 new_list="$front_list'$add_list_id']"
