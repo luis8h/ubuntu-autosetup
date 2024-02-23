@@ -4,7 +4,6 @@ background-transparency-percent=3
 bold-color='#bdbdc3c3c7c7'
 bold-color-same-as-fg=true
 custom-command=''
-font='Roboto Mono for Powerline 14'
 foreground-color='#E0DEF4'
 login-shell=false
 palette=['rgb(38,35,58)', 'rgb(235,111,146)', 'rgb(49,116,143)', 'rgb(246,193,119)', 'rgb(156,207,216)', 'rgb(196,167,231)', 'rgb(235,188,186)', '#EBBCBA', 'rgb(235,188,186)', 'rgb(235,111,146)', 'rgb(49,116,143)', 'rgb(246,193,119)', 'rgb(156,207,216)', 'rgb(196,167,231)', 'rgb(235,188,186)', 'rgb(224,222,244)']

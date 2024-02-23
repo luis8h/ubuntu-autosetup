@@ -11,6 +11,8 @@ sudo apt install -y git-core zsh curl
 (cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/zsh-users/zsh-autosuggestions)
 git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode
 
+cd $DIR
+
 # Color Theme
 dconf load /org/gnome/terminal/legacy/profiles:/:fb358fc9-49ea-4252-ad34-1d25c649e633/ < $DIR/../lib/terminal-profile/configs/terminal_profile.dconf
 add_list_id=fb358fc9-49ea-4252-ad34-1d25c649e633
