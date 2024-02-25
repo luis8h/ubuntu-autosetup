@@ -16,3 +16,7 @@ gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 # for german umlaute with a""
 setxkbmap -option compose:ralt
 
+# clone dotfiles repo and run stow
+sudo apt install stow build-essential -y
+git clone https://github.com/luis8h/dotfiles.git ~/dotfiles
+stow ~/dotfiles
