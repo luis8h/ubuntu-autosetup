@@ -20,5 +20,8 @@ setxkbmap -option compose:ralt
 sudo apt install stow build-essential -y
 git clone https://github.com/luis8h/dotfiles.git ~/dotfiles
 
+rm ~/.profile
 cd ~/dotfiles
-stow -v .
+stow -v . --adopt
+git restore .
+
