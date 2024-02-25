@@ -20,6 +20,9 @@ setxkbmap -option compose:ralt
 sudo apt install stow build-essential -y
 git clone https://github.com/luis8h/dotfiles.git ~/dotfiles
 
+curl -fsSL https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh | /bin/bash -s ~/.cache/dein
+git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+
 rm ~/.profile
 cd ~/dotfiles
 stow -v . --adopt
