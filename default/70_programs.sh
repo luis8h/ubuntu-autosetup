@@ -34,6 +34,11 @@ sudo snap install postman
 # discord
 sudo snap install discord
 
+# nextcloud
+sudo add-apt-repository ppa:nextcloud-devs/client
+sudo apt update
+sudo apt install nextcloud-client -y
+
 # remove created files
 rm *deb
 rm *gz
