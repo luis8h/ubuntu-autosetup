@@ -8,6 +8,6 @@ git-credential-manager configure
 # Set the credential store to cache
 git config --global credential.credentialStore cache
 
-# manual call: git-credential-manager login github
+# manual call: git-credential-manager github login
 # after that, git will automaticly use it for authentication
 
