@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# uninstall i3 to install regolith with i3
-sudo apt remove i3-wm and i3-wm-dbg
-
 # Register the Regolith public key to your local apt
 wget -qO - https://regolith-desktop.org/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
 
