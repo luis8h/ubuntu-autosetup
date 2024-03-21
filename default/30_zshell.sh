@@ -24,3 +24,6 @@ dconf write /org/gnome/terminal/legacy/profiles:/default "'$add_list_id'"
 
 chsh -s $(which zsh)
 
+# install zoxide
+sudo apt install zoxide -y
+
