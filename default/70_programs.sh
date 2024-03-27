@@ -26,6 +26,8 @@ sudo apt install maven -y
 
 sudo apt-get install openjdk-18-jre -y
 
+snap install gradle --classic
+
 # python
 sudo apt install python3-pip -y
 sudo apt install python3-venv -y
