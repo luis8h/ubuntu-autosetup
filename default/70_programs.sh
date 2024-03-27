@@ -18,8 +18,17 @@ sudo tar -zxvf FreeFileSync_13.2_Linux.tar.gz
 sudo ./FreeFileSync_13.2_Install.run
 
 # java
-sudo apt install default-jdk
-sudo apt install default-jre
+sudo apt install default-jdk -y
+sudo apt install default-jre -y
+
+sudo apt update -y
+sudo apt install maven -y
+
+sudo apt-get install openjdk-18-jre -y
+
+# python
+sudo apt install python3-pip -y
+sudo apt install python3-venv -y
 
 # liquibase
 wget -O- https://repo.liquibase.com/liquibase.asc | gpg --dearmor > liquibase-keyring.gpg && \
