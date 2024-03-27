@@ -26,7 +26,8 @@ sudo apt install maven -y
 
 sudo apt-get install openjdk-18-jre -y
 
-snap install gradle --classic
+#snap install gradle --classic # old version of gradle
+sdk install gradle
 
 # python
 sudo apt install python3-pip -y
