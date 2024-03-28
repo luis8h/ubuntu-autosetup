@@ -53,6 +53,9 @@ sudo add-apt-repository ppa:nextcloud-devs/client
 sudo apt update
 sudo apt install nextcloud-client -y
 
+# shutter (screenshot tool - requires additional configuration -> readme)
+sudo apt-get install shutter -y
+
 # remove created files
 rm *deb
 rm *gz
