@@ -26,6 +26,8 @@ sudo apt install maven -y
 
 sudo apt-get install openjdk-18-jre -y
 
+sdk install java # new version
+
 #snap install gradle --classic # old version of gradle
 sdk install gradle
 
