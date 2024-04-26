@@ -22,3 +22,4 @@ nvim --headless -c 'so ~/.config/nvim/lua/theprimeagen/packer.lua' -c 'autocmd U
 sudo apt-get install xclip
 sudo apt-get install ripgrep
 
+sudo apt install latexmk
