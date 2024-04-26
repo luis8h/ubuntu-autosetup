@@ -3,7 +3,10 @@
 # install psql for nvim dadbod (sql in nvim)
 sudo apt-get install -y postgresql-client
 
-snap install nvim --classic
+#older version
+#snap install nvim --classic
+
+bob install nightly
 
 #installing packer
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
