@@ -23,7 +23,7 @@ sudo apt-get install xclip
 sudo apt-get install ripgrep
 
 #needed for treesitter auto_install to work with vimtex
-npm install -g tree-sitter-cli
+sudo npm install -g tree-sitter-cli
 
 #compiler for vimtex
 sudo apt install latexmk
