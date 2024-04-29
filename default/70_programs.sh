@@ -28,6 +28,9 @@ sudo apt-get install openjdk-18-jre -y
 
 sdk install java # new version
 
+# go
+sudo apt-get update && sudo apt-get -y install golang-go
+
 #snap install gradle --classic # old version of gradle
 sdk install gradle
 
