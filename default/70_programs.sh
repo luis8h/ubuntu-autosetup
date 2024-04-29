@@ -31,6 +31,9 @@ sdk install java # new version
 # go
 sudo apt-get update && sudo apt-get -y install golang-go
 
+# maven
+sdk install maven
+
 #snap install gradle --classic # old version of gradle
 sdk install gradle
 
