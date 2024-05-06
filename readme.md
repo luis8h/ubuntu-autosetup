@@ -3,6 +3,13 @@
 
 **important: run install script as user and not as root. Otherwise the environment variables are not set correct.**
 
+## problems
+#### cargo install
+-   cargo is not available when installing bob
+-   workaround: after installation run the following commands:
+    -   ```cargo install --git https://github.com/MordechaiHadad/bob.git```
+    -   ```bob use stable```
+
 
 ## notes
 #### additional configuration
