@@ -2,6 +2,16 @@
 
 DIR="$(dirname "$0")"
 
+# fzf
+sudo apt install fzf -y
+
+# nerdfont
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip \
+&& cd ~/.local/share/fonts \
+&& unzip JetBrainsMono.zip \
+&& rm JetBrainsMono.zip \
+&& fc-cache -fv
+
 # install
 sudo apt install -y git-core zsh curl
 ./$DIR/../lib/terminal-profile/install_zsh.sh
