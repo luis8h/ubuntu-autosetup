@@ -4,6 +4,7 @@ DIR="$(dirname "$0")"
 
 # fzf
 # sudo apt install fzf -y # old version
+sudo apt remove fzf -y
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
