@@ -3,7 +3,9 @@
 DIR="$(dirname "$0")"
 
 # fzf
-sudo apt install fzf -y
+# sudo apt install fzf -y # old version
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
 # nerdfont
 wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip \
