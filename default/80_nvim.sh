@@ -25,5 +25,11 @@ sudo apt-get install ripgrep
 #needed for treesitter auto_install to work with vimtex
 sudo npm install -g tree-sitter-cli
 
+# silicon cli for taking code screenshots
+sudo apt install expat -y
+sudo apt install libxml2-dev -y
+sudo apt install pkg-config libasound2-dev libssl-dev cmake libfreetype6-dev libexpat1-dev libxcb-composite0-dev libharfbuzz-dev libfontconfig1-dev g++ -y
+cargo install silicon
+
 #compiler for vimtex
 sudo apt install latexmk
