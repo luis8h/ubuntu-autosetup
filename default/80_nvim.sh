@@ -22,6 +22,9 @@ bob use stable
 sudo apt-get install xclip
 sudo apt-get install ripgrep
 
+# install fd for directory seach in telescope
+brew install fd
+
 #needed for treesitter auto_install to work with vimtex
 sudo npm install -g tree-sitter-cli
 
