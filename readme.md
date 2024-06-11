@@ -14,7 +14,6 @@
 ## notes
 #### additional configuration
 **should be automated with dotfiles repo later**
--   set custom shortcut for shutter: add new Custom shortcut in settings with command `shutter -s` for shortcut `win-shift-p`
 -   after reboot select jet brains mono nerd font in terminal profile
 -   background image: add via gnome tweaks to take effect
 
