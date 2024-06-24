@@ -20,9 +20,11 @@ sudo curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 
-# bob
+# bob / cargo
 
 curl https://sh.rustup.rs -sSf | sh
+
+source $HOME/.cargo/env
 
 ## if it fails here, just close terminal and try again because cargo was installed just before
 cargo install --git https://github.com/MordechaiHadad/bob.git
