@@ -6,7 +6,7 @@ sudo apt-get install -y postgresql-client
 #older version
 #snap install nvim --classic
 
-bob use stable
+bob use nightly
 
 #installing packer
 # git clone --depth 1 https://github.com/wbthomason/packer.nvim\
