@@ -2,6 +2,7 @@
 
 # kitty
 sudo apt install kitty -y
+sudo update-alternatives --config x-terminal-emulator
 
 # zsh
 sudo apt install zsh -y
