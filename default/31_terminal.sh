@@ -14,6 +14,9 @@ brew install jandedobbeleer/oh-my-posh/oh-my-posh
 # curl
 suto apt install curl -y
 
+# tree for fuzzy search preview
+sudo apt install tree -y
+
 # fzf
 # sudo apt install fzf -y # old version
 sudo apt remove fzf -y
