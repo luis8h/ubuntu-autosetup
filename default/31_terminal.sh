@@ -36,7 +36,8 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 # tmux
-sudo apt install tmux -y
+# sudo apt install tmux -y # too old version causing error with floax plugin
+brew install tmux
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
