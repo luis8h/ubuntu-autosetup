@@ -70,3 +70,6 @@ sudo apt-get install shutter -y
 rm *deb
 rm *gz
 rm FreeFileSync_13.2_Install.run
+
+# icloud
+sudo snap install icloud-for-linux
