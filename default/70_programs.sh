@@ -73,3 +73,9 @@ rm FreeFileSync_13.2_Install.run
 
 # icloud
 sudo snap install icloud-for-linux
+
+# touch gestures
+sudo add-apt-repository ppa:touchegg/stable
+sudo apt install touchegg -y
+sudo apt install gnome-shell-extension-manager
+
