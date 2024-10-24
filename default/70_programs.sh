@@ -85,5 +85,5 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # go
 brew install go
-go install github.com/cosmtrek/air@latest
-go install golang.org/x/tools/gopls@latest
+go install github.com/air-verse/air@latest
+go install golang.org/x/tools/gopls@latest #gopls is also in Mason
