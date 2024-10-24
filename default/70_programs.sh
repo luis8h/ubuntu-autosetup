@@ -81,3 +81,9 @@ sudo apt install gnome-shell-extension-manager
 
 # rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+
+# go
+brew install go
+go install github.com/cosmtrek/air@latest
+go install golang.org/x/tools/gopls@latest
