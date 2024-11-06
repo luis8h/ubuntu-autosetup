@@ -23,6 +23,10 @@ git clone https://github.com/luis8h/dotfiles.git ~/dotfiles
 curl -fsSL https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh | /bin/bash -s ~/.cache/dein
 git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 
+curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
+cargo install kanata
+
 rm ~/.profile
 cd ~/dotfiles
 stow -v . --adopt
