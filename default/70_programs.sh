@@ -79,3 +79,11 @@ sudo add-apt-repository ppa:touchegg/stable
 sudo apt install touchegg -y
 sudo apt install gnome-shell-extension-manager
 
+# rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+
+# go
+brew install go
+go install github.com/air-verse/air@latest
+go install golang.org/x/tools/gopls@latest #gopls is also in Mason
