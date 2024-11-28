@@ -55,8 +55,8 @@ sudo apt-get install liquibase
 # postman
 sudo snap install postman
 
-# discord
-sudo snap install discord
+# discord - now manually because of vencord
+# sudo snap install discord
 
 # nextcloud
 sudo add-apt-repository ppa:nextcloud-devs/client

@@ -12,6 +12,10 @@
 
 
 ## notes
+#### discord
+- install manually over discord website to use it with vencord
+- [vencord](https://vencord.dev/download/)
+
 #### additional configuration
 **should be automated with dotfiles repo later**
 -   after reboot select jet brains mono nerd font in terminal profile
