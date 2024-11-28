@@ -9,6 +9,7 @@
 -   workaround: after installation run the following commands:
     -   ```cargo install --git https://github.com/MordechaiHadad/bob.git```
     -   ```bob use stable```
+-   solution would be to just add ~/.cargo/bin to the path manually
 
 
 ## notes
@@ -28,4 +29,5 @@
 
 #### laptop
 - configure trackpad behavior and power button behavior
+- configure kanata (watch kbase)
 
